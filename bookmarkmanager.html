@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="bookmark.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 Bookmark Manager</h1>
+            <p>Save and organize your favorite links with ease.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section id="add-bookmark">
+            <h2>Add a New Bookmark</h2>
+            <form id="bookmark-form">
+                <div class="form-group">
+                    <input type="text" id="title" placeholder="Enter title" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" id="url" placeholder="Enter URL (https://example.com)" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Bookmark</button>
+            </form>
+        </section>
+        <section id="bookmark-list">
+            <h2>Your Bookmarks</h2>
+            <ul id="bookmarks" class="bookmark-grid"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bookmark Manager. All rights reserved.</p>
+    </footer>
+    <script src="bookmark.js"></script>
+</body>
+
+</html>
